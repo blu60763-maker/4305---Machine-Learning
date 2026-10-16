@@ -18,3 +18,22 @@ understanding, preprocessing, exploratory analysis, modeling, and interpretation
 focusing only on model accuracy, the project emphasizes decision value: whether the
 resulting system can provide stakeholders with a more consistent and evidence-based way to
 evaluate rental prices.
+
+## Data
+
+This project uses the *Apartment for Rent Classified* dataset from the UCI Machine Learning Repository.
+
+- `apartments_for_rent_classified_10K.csv`  
+  A smaller subset used for development, debugging, and demonstration purposes.  
+  This file is included in the repository.
+
+- `apartments_for_rent_classified_100K.csv`  
+  The full dataset (~100,000 listings) used for final analysis.  
+  Due to file size limitations, this file is **not included** in the repository.
+
+### How to obtain the full dataset
+
+Download the full dataset from:
+https://archive.ics.uci.edu/dataset/555/apartment+for+rent+classified
+
+After downloading, place the file in folder: data
