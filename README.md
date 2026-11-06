@@ -1,3 +1,13 @@
+## Overview
+This repository contains coursework and project deliverables for **ITEC 4305: Web Mining**. The project establishes an end-to-end data science and machine learning pipeline that builds a fair-value rental pricing framework using the UCI *Apartment for Rent Classified* dataset. Beyond standard price regression, the framework acts as a practical decision-support tool by standardizing rents and classifying listings into actionable market valuation bands ("Deal", "Fair", and "Premium") based on model residuals.
+
+---
+
+## Core Project Work & Deliverables
+
+* **`Interim Report.pdf` & `Final Report`**  
+  Comprehensive project documentation detailing business context, data cleaning, exploratory data analysis, and ablation experiments across multiple regression models.
+  
 The goal of this project is to build a fair-value rental pricing framework using the Apartment
 for Rent Classified dataset. The project first standardizes listing prices to a monthly basis,
 then uses cleaned and transformed listing information to estimate the expected monthly rent
