@@ -16,12 +16,19 @@ price, the system further classifies listings into practical pricing bands such 
 Premium. This allows the output to be interpreted not only as a prediction task, but also as a
 decision-support tool.
 
-This project belongs mainly to the area of supervised regression with decision support. At a
-basic level, the task is to estimate the expected monthly rent of a rental listing from its
-observable characteristics, such as housing structure, location, and amenities. However, in
-this project, rent prediction is not treated as a purely technical forecasting task. Instead, it is
-used to support a practical pricing decision: whether a listing appears underpriced, fairly
-priced, or overpriced relative to its estimated fair value.
+* **NLP Amenity Mining & Categorical Market Engineering**  
+  * Implemented regular expressions and synonym mapping across unstructured listing descriptions, recovering over 56,000 missing amenity tags and significantly reducing feature sparsity.
+  * Engineered a two-tier hybrid market aggregation strategy that consolidated thousands of sparse raw cities into stable market categories, preventing tree overfitting on rare geographic keys.
+  * Tuned an **XGBoost Regressor** that significantly outperformed the baseline model, increasing R^2 from 0.5223 to 0.7875 and reducing MAPE from 22.12\% down to 13.75\% by effectively capturing non-linear interactions between granular amenities and localized markets.
+
+* **Geospatial Intelligence & Clustering**  
+  * Combined continuous coordinates (latitude and longitude) with state-level administrative markers using spatial K-Means clustering (k=30) to act as localized neighborhood market proxies.
+  * Evaluated non-linear spatial effects using **Random Forest** and **Ridge Regression**, achieving peak performance when combining regional boundaries with localized spatial cluster features.
+
+* **Decision-Support Valuation Framework**  
+  * Converted residual error margins into transparent pricing bands: **Good Deal** (underpriced/high value for renters), **Fair Market Price**, and **Overpriced** (above market/vacancy risk for landlords).
+
+---
 
 Overall, this project is designed as an end-to-end data science pipeline that connects data
 understanding, preprocessing, exploratory analysis, modeling, and interpretation. Rather than
