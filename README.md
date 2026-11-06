@@ -13,9 +13,11 @@ decision-support tool.
 
 ## Core Project Work & Deliverables
 
+* **`Amenity.ipynb`**  
+  Primary source notebook containing the full implementation of the NLP keyword extraction, text preprocessing, feature engineering pipelines, model training workflows, and evaluation analysis.
+
 * **`Interim Report.pdf` & `Final Report`**  
   Comprehensive project documentation detailing business context, data cleaning, exploratory data analysis, and ablation experiments across multiple regression models.
-
 
 * **NLP Amenity Mining & Categorical Market Engineering**  
   * Implemented regular expressions and synonym mapping across unstructured listing descriptions, recovering over 56,000 missing amenity tags and significantly reducing feature sparsity.
